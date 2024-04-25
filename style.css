@@ -199,9 +199,9 @@ ul#References {
 }
 
 @media only screen and (max-width: 1100px) {
-  body {
+  /* body {
     background-color: rgb(18, 220, 0);
-  }
+  } */
   .top {
     display: flex;
     flex-direction: column;
@@ -304,9 +304,9 @@ ul#References {
   100% {background-color:#FF5B63; left:-80px; top:0px;}
 }
 @media only screen and (max-width: 802px) {
-  body {
+  /* body {
     background-color: lightblue;
-  }
+  } */
   
   .top {
     display: flex;
