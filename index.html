@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <title>Comma studioe</title>
+    </main>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+    <div class="nav-bar">
+        <a href="https://docs.google.com/forms/d/1sTBVUAjR_orE_tRj42_mAHjTDWPB5T0w7QChoUUi7w0/edit" target="_blank" style="height: 100px;"><img src="Images/Group 50.png" style="max-height:300px; max-width:400px;"></a>
+        <div class="top">
+            <img id="logo" src="/Images/commaWebLogo.png" alt="COMMA Studio Logo">
+            <h1 id="animate1">To probe into various states of ongoingness within the student designers in our community.</h1>
+        </div>
+    </div>
+    <div class="info">
+        <div class="podcast">
+            <div class="left-side">
+                <div class="episodes">
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:4HhfO4c9cRXJjo1SwjFK3T?utm" onclick="change_text1()">
+                                EP 01: A Running Start...</button>
+                                <div class="tags">
+                                    <h4 id="pink">/Communications/</h4>
+                                    <h4 id="mint">(4th-year)</h4>
+                                </div>
+                        </div>
+                        <audio id="myAudio" src="audios/Intro background music.mp3" preload="auto"></audio>
+                        <a onClick="togglePlay()"><img id="play-button" src="Images/Frame 228.png" style="max-width: 40px;"></a>
+                    </div>
+                    <button class="episode" data-spotify-id="spotify:episode:6X1V3c2VaOnh0CHBpid4lW?utm" onclick="change_text2()">
+                        EP 02: Is Design an Argument?
+                        <div class="tags">
+                            <h4 id="pink">/Environments/</h4>
+                            <h4 id="mint">(4th-year)</h4>
+                        </div>
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:3peYARkL087V0YGjR3X05r?si" onclick="change_text3()">
+                        EP 03: Why Do You Know This, Sam?
+                        <div class="tags">
+                            <h4 id="pink">/Communications/</h4>
+                            <h4 id="mint">(4th-year)</h4>
+                        </div>
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:2hMegsHr4kg06qRnDQuP6c?si" onclick="change_text4()">
+                        EP 04: Uncovering CMU's Lost Archives with Nancy.
+                        <div class="tags">
+                            <h4 id="pink">/Modern Languages/</h4>
+                            <h4 id="mint">(6th-year)</h4>
+                        </div>
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text5()">
+                        EP 05: Gretchen
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text6()">
+                        EP 06: Catherine
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text7()">
+                        EP 07: Jacky
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text8()">
+                        EP 08: Riya
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text9()">
+                        EP 09: Yash
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text10()">
+                        EP 10: Dion & Aarnav
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text11()">
+                        EP 11: Erica 
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text12()">
+                        EP 12: Olivia
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text13()">
+                        EP 13: Erica Fu
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text14()">
+                        EP 14: Michelle Li
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text15()">
+                        EP 14: Caleb Sun
+                    </button>
+                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text16()">
+                        EP 14: Someone else
+                    </button>
+                </div>
+            </div>
+            <div class="content">
+                <div id="embed-iframe"></div>
+                <script src="https://open.spotify.com/embed/iframe-api/v1" async>
+                </script>
+                <script src="comma.js"></script>
+                <div class="descriptions">
+                    <div id="descriptionHeader">
+                        <h3 id="number">EP.01</h3>
+                        <h2 id="title">A Running Start...</h2>
+                        <h3 id="tag">/Communications/  (4th-year)</h3>
+                    </div>
+                    <p id="description-text">Welcome to a coffee chat with your hosts, Tara and Jessica, as they navigate their 
+                        senior year journey at Carnegie Mellon's School of Design. Join them in unraveling the concept of ongoingness, 
+                        reflecting on the inception of this podcast, and sharing insights into their self-driven projects. They discuss 
+                        the often solitary nature of being a designer amidst the complexities of today's world (tldr: design is lonely). 
+
+                        If you're entrenched in the design community and find yourself in our vicinity, we invite you to join us on the 
+                        podcast. Reach out to commastudio.contact@gmail.com for inquiries and potential collaborations.
+                    </p>
+                    <p>References:</p>
+                     <ul id="References">
+                        <a href="https://www.thienle.me/">Thien's Work Here</a>
+                        <a href="https://welcometocup.org/">The Center for Urban Pedagogy</a>
+                    </ul>
+                    <div class="links">
+                        <a href="https://open.spotify.com/show/5B07xkRjozGACeYgEhNEYc?si=e740131c8d434c39" target="_blank"><img src="Images/spotify_1.gif" style="max-height:100%; max-width:100%;"></a>
+                        <a href="https://www.instagram.com/comma_connect/" target="_blank"><img src="Images/instagram.gif" style="max-height:100%; max-width:100%;"></a>
+                        <a href="mailto: comma.studio.contact@gmail.com" target="_blank"><img src="Images/email_1.gif" style="max-height:100%; max-width:100%;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+

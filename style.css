@@ -1,0 +1,395 @@
+@font-face {
+  font-family: 'PPFormula';
+  src: url("/font/PPFormula-NarrowRegular.otf") format("opentype");
+  font-weight: normal;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  padding: 0rem 2vw 0rem 2vw;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@keyframes example {
+  0%   {background-color:#FF5B63; left:-40px; top:0px;}
+  25%  {background-color:#ECFFA0; left:100px; top:0px;}
+  50%  {background-color:#AFCBFF; left:0px; top:0px;}
+  75%  {background-color:#B2FFCB; left:100px; top:0px;}
+  100% {background-color:#FF5B63; left:-40px; top:0px;}
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  height: 20vh;
+  padding: 0rem 2vw 0rem 2vw;
+  position: relative;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+}
+
+#logo {
+  max-width: 400px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#animate1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.podcast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.episodes {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    overflow:auto;
+    position:relative;
+    align-items: flex-start;
+}
+
+.episode {
+    min-width: max-content;
+    max-width: 100%;
+    padding: .8rem 1rem;
+    border: 0;
+    color: #fff;
+    background: #191414;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    transition: background-color 1s ease-out 100ms
+}
+
+.episode:hover {
+    background: #B2FFCB;
+    color: #191414;
+    transition: color 1s ease-out 100ms
+}
+
+.button-full {
+  display: flex;
+  flex-direction: row;
+  background: #191414;
+  margin-bottom: .2rem;
+}
+
+.just-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  padding: .8rem 1rem;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  height: auto;
+}
+
+div#descriptionHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+  font-size: 36px;
+  line-height: 34px;
+}
+body h2 {
+  /* font-family: "/font/PPFormula-NarrowRegular.otf"; */
+  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+  font-size: 36px;
+  line-height: 34px;
+  margin-block-start: 0.2em;
+  margin-inline-start: 0.5em;
+}
+
+body h3 {
+  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  margin-block-start: 0.2em;
+}
+
+body h4 {
+  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+  font-size: 16px;
+  margin: 0em 1em 0em 0em;
+}
+
+#pink {
+  color: #FF5B63;
+}
+
+#mint {
+  color: #B2FFCB;
+}
+
+a:hover{
+  opacity: 50%;
+
+ }
+
+p {
+  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  margin-block-start: 0.2em;
+}
+
+ul#References {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#play-button {
+  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+  color:white;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: rgb(18, 220, 0);
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 500px;
+    padding: 0rem 2vw 0rem 2vw;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 96vw;
+    height: 90vh;
+    padding: 0rem 2vw 0rem 2vw;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .podcast {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .episodes {
+      display: flex;
+      flex-direction: column;
+      height: 75vh;
+      overflow:auto;
+      width: auto;
+      position:relative;
+      align-items: flex-start;
+  }
+  
+  .instagram-big{
+    display: none;
+  }
+  .instagram-small {
+    display:contents;
+  }
+
+  h1 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-block-start: 0.2em;
+    margin-inline-start: 0.5em;
+  }
+
+  body h2 {
+    /* font-family: "/font/PPFormula-NarrowRegular.otf"; */
+    font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+    font-size: 36px;
+    line-height: 34px;
+    margin-block-start: 0.2em;
+    margin-inline-start: 0.5em;
+  }
+  
+  body h3 {
+    font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin-block-start: 0.2em;
+  }
+  p {
+    font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin-block-start: 0.2em;
+  }
+  
+  .episode {
+    min-width: max-content;
+    max-width: 100%;
+    margin-bottom: .2rem;
+    padding: .8rem 1rem;
+    border: 0;
+    background: #191414;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    transition: background-color 1s ease-out 100ms
+  }
+}
+
+@keyframes example1 {
+  0%   {background-color:#FF5B63; left:-80px; top:0px;}
+  25%  {background-color:#ECFFA0; left:30px; top:0px;}
+  50%  {background-color:#AFCBFF; left:0px; top:0px;}
+  75%  {background-color:#B2FFCB; left:30px; top:0px;}
+  100% {background-color:#FF5B63; left:-80px; top:0px;}
+}
+@media only screen and (max-width: 802px) {
+  body {
+    background-color: lightblue;
+  }
+  
+  .top {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    padding: 2rem 2vw 2rem 2vw;
+    position: relative;
+    animation-name: example1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 96vw;
+    height: 90vh;
+    padding: 2rem 2vw 2rem 2vw;
+    justify-content: space-between;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .podcast {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: space-between;
+
+  }
+  .instagram-small {
+    display:none;
+  }
+
+  body h1, h2 {
+    /* font-family: "/font/PPFormula-NarrowRegular.otf"; */
+    font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+    font-size: 24px;
+    line-height: 22px;
+    margin-block-start: 0.2em;
+    margin-inline-start: 0.5em;
+  }
+  
+  body h3 {
+    font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin-block-start: 0.2em;
+  }
+  p {
+    font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-block-start: 0.2em;
+  }
+  
+  .episode {
+    min-width: max-content;
+    max-width: 100%;
+    margin-bottom: .2rem;
+    padding: .8rem 1rem;
+    margin-right: 10px;
+    border: 0;
+    background: #191414;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .episodes {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    overflow: auto;
+    width: auto;
+    position:relative;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+}
