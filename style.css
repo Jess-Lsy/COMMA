@@ -75,7 +75,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 70vh;
-    overflow:auto;
+    overflow-x:auto;
     position:relative;
     align-items: flex-start;
 }
