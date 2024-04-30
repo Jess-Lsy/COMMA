@@ -7,7 +7,7 @@ function change_text1(){
 }
 function change_text2(){
     document.getElementById("number").innerHTML="EP.02"
-    document.getElementById("title").innerHTML="Is Design an Argument?"
+    document.getElementById("title").innerHTML="Thien, Is Design an Argument?"
     document.getElementById("tag").innerHTML="/Communications/  (4th-year)"
     document.getElementById("description-text").innerHTML="Join us for an insightful conversation with Thien Le, a designer specializing in the environment track and boasting a double major in history. Currently, Thien is immersed in projects centered on archiving 'viral' moments from American awards shows into a tangible book, while also pioneering improved channels for communicating DEI issues within the School of Design. In this episode, we explore the fascinating intersection of history and design, delving into Thien's perspective of design as a powerful argument— a manifestation of values, a form of commentary, and a framing tool. We tackle the complexities of maintaining integrity to one's values while navigating the demands of entering the workforce and sustaining a livelihood."
     document.getElementById("references").innerHTML="idk"
@@ -22,32 +22,56 @@ function change_text3(){
 function change_text4(){
     document.getElementById("number").innerHTML="EP.04"
     document.getElementById("title").innerHTML="Uncovering CMU's Lost Archives with Nancy."
-    document.getElementById("tag").innerHTML="/Communications/  (4th-year)"
+    document.getElementById("tag").innerHTML="/Modern Languages/  (4+th-year)"
     document.getElementById("description-text").innerHTML="Join us on today's episode as we chat with Nancy Zuo, a student who carved a unique path through her five-year journey at our school, delving into business, HCI, Information Systems, Art, and ultimately finding her niche in the Modern Languages department where she created her own major. Together, we delve into intriguing topics, pondering the dominance of Asian women in UI/UX, the intersection of art and design, and the significance of archiving. Nancy's stint at the CMU Archives unearthed captivating insights, shedding light on forgotten aspects of our history such as past presidents, student activism, and zines. We explore how CMU's buildings, named after these presidents, serve as monumental markers of their legacies, reflecting their policies, values, and positions in a curious architectural phenomenon."
     document.getElementById("references").innerHTML="idk"
 }
 function change_text5(){
     document.getElementById("number").innerHTML="EP.05"
-    document.getElementById("title").innerHTML="sam"
-    document.getElementById("description-text").innerHTML='Our guest for today, Thien Le, is a designer in the environments track and has a double major in history. He is currently working on projects surrounding archiving "viral" moments of American awards shows in a printed book and developing better lines of communicating DEI issues in the School of Design. In this podcast we discuss the intersection of history and design, his views of design as an argument - a presentation of his values, a commentary, and a way of framing. We discuss the challenges around sticking to your values and wanting to implement changes while having to enter the workforce and make a living.'
+    document.getElementById("title").innerHTML="Toast and Eye Candy with Gretchen"
+    document.getElementById("tag").innerHTML="/Communications/  (4+th-year)"
+    document.getElementById("description-text").innerHTML="Join us on today’s episode where we talk with Gretchen Kupfershmid, a senior in design and a multifaceted visual designer, illustrator, food decorator, local influencer, and all round curator. There aren’t enough words to describe her craft! We delve into the world of personal branding for designers, exploring the importance of cultivating a curated online presence. Learn how Gretchen navigates the balance of self-image and authenticity, while also gaining valuable insights into the creative process. We also explore Gretchen's unique illustration styles and the vital role of prioritizing mental health in the creative industry."
     document.getElementById("references").innerHTML="idk"
 }
 function change_text6(){
     document.getElementById("number").innerHTML="EP.06"
-    document.getElementById("title").innerHTML="gretchen"
-    document.getElementById("description-text").innerHTML='Our guest for today, Thien Le, is a designer in the environments track and has a double major in history. He is currently working on projects surrounding archiving "viral" moments of American awards shows in a printed book and developing better lines of communicating DEI issues in the School of Design. In this podcast we discuss the intersection of history and design, his views of design as an argument - a presentation of his values, a commentary, and a way of framing. We discuss the challenges around sticking to your values and wanting to implement changes while having to enter the workforce and make a living.'
+    document.getElementById("title").innerHTML="Someone Get Catherine Her Sunlight"
+    document.getElementById("tag").innerHTML="/Products/  (4th-year)"
+    document.getElementById("description-text").innerHTML='Soon to come...'
     document.getElementById("references").innerHTML="idk"
 }
 function change_text7(){
     document.getElementById("number").innerHTML="EP.07"
-    document.getElementById("title").innerHTML="catherine"
-    document.getElementById("description-text").innerHTML='Our guest for today, Thien Le, is a designer in the environments track and has a double major in history. He is currently working on projects surrounding archiving "viral" moments of American awards shows in a printed book and developing better lines of communicating DEI issues in the School of Design. In this podcast we discuss the intersection of history and design, his views of design as an argument - a presentation of his values, a commentary, and a way of framing. We discuss the challenges around sticking to your values and wanting to implement changes while having to enter the workforce and make a living.'
+    document.getElementById("title").innerHTML="Jacky is Seeing the World*"
+    document.getElementById("description-text").innerHTML='Soon to come...'
     document.getElementById("references").innerHTML="idk"
 }
 function change_text8(){
     document.getElementById("number").innerHTML="EP.08"
-    document.getElementById("title").innerHTML="jacky"
-    document.getElementById("description-text").innerHTML='Our guest for today, Thien Le, is a designer in the environments track and has a double major in history. He is currently working on projects surrounding archiving "viral" moments of American awards shows in a printed book and developing better lines of communicating DEI issues in the School of Design. In this podcast we discuss the intersection of history and design, his views of design as an argument - a presentation of his values, a commentary, and a way of framing. We discuss the challenges around sticking to your values and wanting to implement changes while having to enter the workforce and make a living.'
+    document.getElementById("title").innerHTML="How is Riya Putting Thought into Words? "
+    document.getElementById("tag").innerHTML="/Communications/  (4th-year)"
+    document.getElementById("description-text").innerHTML='Soon to come...'
+    document.getElementById("references").innerHTML="idk"
+}
+function change_text9(){
+    document.getElementById("number").innerHTML="EP.09"
+    document.getElementById("title").innerHTML="Who Said Yash Can't Draw Straight Lines?"
+    document.getElementById("tag").innerHTML="/Environments/  (4th-year)"
+    document.getElementById("description-text").innerHTML='Soon to come...'
+    document.getElementById("references").innerHTML="idk"
+}
+function change_text10(){
+    document.getElementById("number").innerHTML="EP.10"
+    document.getElementById("title").innerHTML="~~~Dion & Aarnav Dynamics!!! "
+    document.getElementById("tag").innerHTML="/Communications & Environments/  (3rd-year)"
+    document.getElementById("description-text").innerHTML='Soon to come...'
+    document.getElementById("references").innerHTML="idk"
+}
+function change_text11(){
+    document.getElementById("number").innerHTML="EP.11"
+    document.getElementById("title").innerHTML=" Erica Talks IS."
+    document.getElementById("tag").innerHTML="/Information Systems/  (4th-year)"
+    document.getElementById("description-text").innerHTML='Soon to come...'
     document.getElementById("references").innerHTML="idk"
 }
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
@@ -66,19 +90,4 @@ const callback = (EmbedController) => {
     })
 };
 IFrameAPI.createController(element, options, callback);
-};
-
-var myAudio = document.getElementById("myAudio");
-var isPlaying = false;
-
-function togglePlay() {
-  isPlaying ? myAudio.pause() : myAudio.play();
-  
-};
-
-myAudio.onplaying = function() {
-  isPlaying = true;
-};
-myAudio.onpause = function() {
-  isPlaying = false;
 };

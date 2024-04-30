@@ -21,11 +21,11 @@ body{
 }
 
 @keyframes example {
-  0%   {background-color:#FF5B63; left:-40px; top:0px;}
-  25%  {background-color:#ECFFA0; left:100px; top:0px;}
-  50%  {background-color:#AFCBFF; left:0px; top:0px;}
-  75%  {background-color:#B2FFCB; left:100px; top:0px;}
-  100% {background-color:#FF5B63; left:-40px; top:0px;}
+  0%   {background-color:#FF5B63; left:-80px; top:0px;}
+  25%  {background-color:#ECFFA0; left:50px; top:0px;}
+  50%  {background-color:#AFCBFF; left:-20px; top:0px;}
+  75%  {background-color:#B2FFCB; left:50px; top:0px;}
+  100% {background-color:#FF5B63; left:-80px; top:0px;}
 }
 
 .nav-bar {
@@ -83,7 +83,7 @@ body{
 .episode {
     min-width: max-content;
     max-width: 100%;
-    padding: .8rem 1rem;
+    padding: .8rem 1rem 0.3rem 1rem;
     border: 0;
     color: #fff;
     background: #191414;
@@ -116,11 +116,14 @@ body{
 .tags {
   display: flex;
   flex-direction: row;
+  padding: .2rem 1rem;
 }
 
 .content{
   display: flex;
   flex-direction: column;
+  width: 58vw;
+  margin-left: 2vw;
 }
 
 .descriptions {
@@ -130,6 +133,10 @@ body{
   background-color: #D9D9D9;
   border-radius: 10px;
   height: auto;
+}
+
+#description-text {
+  max-width: 650px;
 }
 
 div#descriptionHeader {
@@ -152,15 +159,17 @@ body h2 {
 }
 
 body h3 {
-  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
-  font-size: 22px;
-  line-height: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
   margin-block-start: 0.2em;
 }
 
 body h4 {
   font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
   font-size: 16px;
+  font-weight: 200;
   margin: 0em 1em 0em 0em;
 }
 
@@ -170,6 +179,10 @@ body h4 {
 
 #mint {
   color: #B2FFCB;
+}
+
+#blue {
+  color:#AFCBFF;
 }
 
 a:hover{
@@ -184,6 +197,11 @@ p {
   margin-block-start: 0.2em;
 }
 
+.musical-container {
+  background-color: black;
+  padding: 10px;
+}
+
 ul#References {
   display: flex;
   flex-direction: column;
@@ -192,11 +210,6 @@ ul#References {
   line-height: 24px;
 }
 
-#play-button {
-  font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
-  color:white;
-  padding: 10px;
-}
 
 @media only screen and (max-width: 1100px) {
   /* body {

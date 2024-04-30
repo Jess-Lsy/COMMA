@@ -7,6 +7,19 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(function(){
+        $('.musical-container img').hover(
+            function() { 
+                $(this).prev()[0].play()
+            },
+            function() { 
+                $(this).prev()[0].pause()
+            }
+        )
+    })
+</script>
   </head>
   <body>
     <main>
@@ -24,74 +37,214 @@
         <div class="podcast">
             <div class="left-side">
                 <div class="episodes">
+                    
                     <div class="button-full">
                         <div class="just-button">
                             <button class="episode" data-spotify-id="spotify:episode:4HhfO4c9cRXJjo1SwjFK3T?utm" onclick="change_text1()">
-                                EP 01: A Running Start...</button>
+                            EP 01: A Running Start...</button>
+                            <div class="tags">
+                                <h4 id="pink">/Communications/</h4>
+                                <h4 id="mint">(4th-year)</h4>
+                            </div>
+                        </div>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                        <audio preload="auto">
+                            <source src="audios/TARAJESSICA_CLIP.mp3" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                        </audio>
+                             
+                        <img src="Images/Frame 228.png" style="max-width: 40px;">
+                        </div>
+                    </div>
+
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:6X1V3c2VaOnh0CHBpid4lW?utm" onclick="change_text2()">
+                            EP 02: Thien, Is Design an Argument?</button>
+                            <div class="tags">
+                                <h4 id="pink">/Environments/</h4>
+                                <h4 id="mint">(4th-year)</h4>
+                            </div>
+                        </div>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                        <audio preload="auto">
+                            <source src="audios/THIEN_CLIP.mp3" type="audio/mpeg">
+                            Your browser does not support this audio format.
+                        </audio>
+                             
+                        <img src="Images/Frame 228.png" style="max-width: 40px;">
+                        </div>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:3peYARkL087V0YGjR3X05r?si" onclick="change_text3()">
+                                EP 03: Why Do You Know This, Sam?</button>
                                 <div class="tags">
                                     <h4 id="pink">/Communications/</h4>
                                     <h4 id="mint">(4th-year)</h4>
                                 </div>
                         </div>
-                        <audio id="myAudio" src="audios/Intro background music.mp3" preload="auto"></audio>
-                        <a onClick="togglePlay()"><img id="play-button" src="Images/Frame 228.png" style="max-width: 40px;"></a>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                            <audio preload="auto">
+                              <source src="audios/SAM.mp3" type="audio/mpeg">
+                              Your browser does not support this audio format.
+                            </audio>
+                             
+                            <img src="Images/Frame 228.png" style="max-width: 40px;">
+                        </div>
                     </div>
-                    <button class="episode" data-spotify-id="spotify:episode:6X1V3c2VaOnh0CHBpid4lW?utm" onclick="change_text2()">
-                        EP 02: Is Design an Argument?
-                        <div class="tags">
-                            <h4 id="pink">/Environments/</h4>
-                            <h4 id="mint">(4th-year)</h4>
+
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:2hMegsHr4kg06qRnDQuP6c?si" onclick="change_text4()">
+                                EP 04: Uncovering CMU's Lost Archives with Nancy.</button>
+                                <div class="tags">
+                                    <h4 id="pink">/Modern Languages/</h4>
+                                    <h4 id="mint">(4+th-year)</h4>
+                                </div>
                         </div>
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:3peYARkL087V0YGjR3X05r?si" onclick="change_text3()">
-                        EP 03: Why Do You Know This, Sam?
-                        <div class="tags">
-                            <h4 id="pink">/Communications/</h4>
-                            <h4 id="mint">(4th-year)</h4>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                            <audio preload="auto">
+                              <source src="audios/Nancy.mp3" type="audio/mpeg">
+                              Your browser does not support this audio format.
+                            </audio>
+                             
+                            <img src="Images/Frame 228.png" style="max-width: 40px;">
                         </div>
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:2hMegsHr4kg06qRnDQuP6c?si" onclick="change_text4()">
-                        EP 04: Uncovering CMU's Lost Archives with Nancy.
-                        <div class="tags">
-                            <h4 id="pink">/Modern Languages/</h4>
-                            <h4 id="mint">(6th-year)</h4>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:5pVRaOYpNdx8PyDHpgR1yF?si" onclick="change_text5()">
+                                EP 05: Toast and Eye Candy with Gretchen~</button>
+                                <div class="tags">
+                                    <h4 id="pink">/Communications/</h4>
+                                    <h4 id="mint">(4+th-year)</h4>
+                                </div>
                         </div>
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text5()">
-                        EP 05: Gretchen
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text6()">
-                        EP 06: Catherine
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text7()">
-                        EP 07: Jacky
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text8()">
-                        EP 08: Riya
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text9()">
-                        EP 09: Yash
-                    </button>
-                    <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text10()">
-                        EP 10: Dion & Aarnav
-                    </button>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                            <audio preload="auto">
+                              <source src="audios/GRETCHEN_CLIP.mp3" type="audio/mpeg">
+                              Your browser does not support this audio format.
+                            </audio>
+                             
+                            <img src="Images/Frame 228.png" style="max-width: 40px;">
+                        </div>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text6()">
+                                EP 06: Someone Get Catherine Her Sunlight! 
+                            </button>
+                                <div class="tags">
+                                    <h4 id="pink">/Products/</h4>
+                                    <h4 id="mint">(4th-year)</h4>
+                                </div>
+                        </div>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                            <audio preload="auto">
+                              <source src="audios/CATHERINE_CLIP.mp3" type="audio/mpeg">
+                              Your browser does not support this audio format.
+                            </audio>
+                             
+                            <img src="Images/Frame 228.png" style="max-width: 40px;">
+                        </div>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text7()">
+                                EP 07: Jacky is Seeing the World* 
+                            </button>
+                                <div class="tags">
+                                    <h4 id="pink">/Communications/</h4>
+                                    <h4 id="mint">(4th-year)</h4>
+                                </div>
+                        </div>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                            <audio preload="auto">
+                              <source src="audios/JACKY_CLIP.mp3" type="audio/mpeg">
+                              Your browser does not support this audio format.
+                            </audio>
+                             
+                            <img src="Images/Frame 228.png" style="max-width: 40px;">
+                        </div>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text8()">
+                                EP 08: How is Riya Putting Thought into Words?    
+                            </button>
+                                <div class="tags">
+                                    <h4 id="pink">/Communications/</h4>
+                                    <h4 id="mint">(4th-year)</h4>
+                                </div>
+                        </div>
+                        <div class="musical-container">
+                            <!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
+                            <audio preload="auto">
+                              <source src="audios/RIYA_CLIP.mp3" type="audio/mpeg">
+                              Your browser does not support this audio format.
+                            </audio>
+                             
+                            <img src="Images/Frame 228.png" style="max-width: 40px;">
+                        </div>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text9()">
+                                EP 09: Who Said Yash Can't Draw Straight Lines?
+                            </button>
+                                <div class="tags">
+                                    <h4 id="pink">/Environments/</h4>
+                                    <h4 id="mint">(4th-year)</h4>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text10()">
+                                EP 10: ~~~Dion & Aarnav Dynamics!!!
+                            </button>
+                                <div class="tags">
+                                    <h4 id="pink">/Communications & Environments/</h4>
+                                    <h4 id="mint">(3rd-year)</h4>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="button-full">
+                        <div class="just-button">
+                            <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text11()">
+                            EP 11: Erica Talks IS.
+                            </button>
+                                <div class="tags">
+                                    <h4 id="pink">/Information Systems/</h4>
+                                    <h4 id="mint">(4th-year)</h4>
+                                </div>
+                        </div>
+                    </div>
                     <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text11()">
-                        EP 11: Erica 
+                        EP 12: Olivia 
                     </button>
                     <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text12()">
-                        EP 12: Olivia
+                        EP 13: Christy
                     </button>
                     <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text13()">
-                        EP 13: Erica Fu
+                        EP 14: Hannah
                     </button>
                     <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text14()">
-                        EP 14: Michelle Li
+                        EP 15: Michelle
                     </button>
                     <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text15()">
-                        EP 14: Caleb Sun
+                        EP 16: Gabby
                     </button>
                     <button class="episode" data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV" onclick="change_text16()">
-                        EP 14: Someone else
+                        EP 17: and you!
                     </button>
                 </div>
             </div>
